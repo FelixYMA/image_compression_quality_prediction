@@ -19,7 +19,7 @@ This project builds a **two-stage machine learning pipeline** to predict image c
 
 ## Repository Structure
 .
-├── notebooks/
+├── notebooks/n
 │ ├── 01_svm_train_test.ipynb
 │ └── 02_regression_train_test.ipynb
 ├── docs/
