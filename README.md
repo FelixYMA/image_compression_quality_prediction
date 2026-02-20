@@ -55,7 +55,7 @@ See the full report for methodology details, experiments, and discussion:
 └── README.md
 ```
 
-If your report filename differs, update the path above accordingly.
+> If your report filename differs, update the path above accordingly.
 
 ---
 
