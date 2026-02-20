@@ -114,7 +114,7 @@ Recommended steps:
      ```
      > (Adjust based on imports in your notebooks.)
 
-   If you want, you can generate a requirements.txt after confirming everything runs:
+   If you want, you can generate a `requirements.txt` after confirming everything runs:
     ```text
     pip freeze > requirements.txt
     ```
