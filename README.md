@@ -81,15 +81,15 @@ Then, open the notebooks and update the path variables (look for cells such as `
 
 ## How to Run (Reproducibility)
 ### Option A — Run in order (recommended)
-**1. Stage 1**: `notebooks/01_svm_train_test.ipynb`
-     - Extract InceptionV3 features
-     - Train/test SVM classifier
-     - Save intermediate outputs if your notebook does so (optional)
+1. **Stage 1**: `notebooks/01_svm_train_test.ipynb`
+   - Extract InceptionV3 features
+   - Train/test SVM classifier
+   - Save intermediate outputs if your notebook does so (optional)
 
-**2. Stage 2**: `notebooks/02_regression_train_test.ipynb`
-     - Load/compute required features and labels
-     - Train/test the multi-output regressor
-     - Generate evaluation metrics and plots
+2. **Stage 2**: `notebooks/02_regression_train_test.ipynb`
+   - Load/compute required features and labels
+   - Train/test the multi-output regressor
+   - Generate evaluation metrics and plots
 
 ### Option B — Run individually
 Each notebook can be run independently as long as the dataset paths are correctly configured.
