@@ -103,16 +103,17 @@ Recommended steps:
 
 1. Create a clean environment (conda/venv)
 2. Install dependencies (choose one approach):
-  - If you have `requirements.txt`, run:
-    ```text
-    pip install -r requirements.txt
-    ```
-  - Otherwise, install the common stack used in the notebooks (example):
-    ```text
-    pip install numpy pandas scikit-learn matplotlib notebook
-    pip install tensorflow
-    ```
-    > (Adjust based on imports in your notebooks.)
+   - If you have `requirements.txt`, run:
+     ```text
+     pip install -r requirements.txt
+     ```
+   - Otherwise, install the common stack used in the notebooks (example):
+     ```text
+     pip install numpy pandas scikit-learn matplotlib notebook
+     pip install tensorflow
+     ```
+     > (Adjust based on imports in your notebooks.)
+    
 If you want, you can generate a requirements.txt after confirming everything runs:
     ```text
     pip freeze > requirements.txt
