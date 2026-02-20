@@ -77,6 +77,8 @@ data/
 Then, open the notebooks and update the path variables (look for cells such as `DATA_ROOT`, `DATA_DIR`, `IMAGE_DIR`, etc.).
 > Tip: if you already have an archive (zip) used for testing, keep it locally and extract into `data/`.
 
+---
+
 ## How to Run (Reproducibility)
 ### Option A — Run in order (recommended)
 1. **Stage 1**: `notebooks/01_svm_train_test.ipynb`
@@ -91,6 +93,8 @@ Then, open the notebooks and update the path variables (look for cells such as `
 
 ### Option B — Run individually
 Each notebook can be run independently as long as the dataset paths are correctly configured.
+
+---
 
 ## Environment / Dependencies
 This project is implemented in **Python** using Jupyter notebooks.
@@ -113,11 +117,14 @@ If you want, you can generate a requirements.txt after confirming everything run
     ```text
     pip freeze > requirements.txt
     ```
+---
 
 ## Notes
 - This is a **team project**. Co-authors are omitted in this public version.
 - The reported results and experiments are documented in the accompanying PDF report.
 - If you plan to share this repo in applications, keep the README focused on: **problem** → **method** → **results** → **how to run**.
+
+---
 
 ## License
 This repository is released under the **MIT License** (see `LICENSE`).
