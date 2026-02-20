@@ -53,3 +53,71 @@ See the full report for methodology details, experiments, and discussion:
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
+
+If your report filename differs, update the path above accordingly.
+
+---
+
+## Data & Setup
+
+### Data Availability
+This public repository **does not include** the image dataset/compressed outputs due to size and/or distribution constraints.
+
+### Expected Local Data Layout (recommended)
+
+Create a `data/` folder locally (it should remain ignored by git):
+
+```text
+data/
+├── images_original/
+├── images_compressed/
+└── labels_or_metadata.xlsx   # (if applicable)
+```
+Then, open the notebooks and update the path variables (look for cells such as `DATA_ROOT`, `DATA_DIR`, `IMAGE_DIR`, etc.).
+> Tip: if you already have an archive (zip) used for testing, keep it locally and extract into `data/`.
+
+## How to Run (Reproducibility)
+### Option A — Run in order (recommended)
+1. **Stage 1**: `notebooks/01_svm_train_test.ipynb`
+  - Extract InceptionV3 features
+  - Train/test SVM classifier
+  - Save intermediate outputs if your notebook does so (optional)
+
+2. **Stage 2**: `notebooks/02_regression_train_test.ipynb`
+  - Load/compute required features and labels
+  - Train/test the multi-output regressor
+  - Generate evaluation metrics and plots
+
+### Option B — Run individually
+Each notebook can be run independently as long as the dataset paths are correctly configured.
+
+## Environment / Dependencies
+This project is implemented in **Python** using Jupyter notebooks.
+
+Recommended steps:
+
+1. Create a clean environment (conda/venv)
+2. Install dependencies (choose one approach):
+  - If you have `requirements.txt`, run:
+    ```text
+    pip install -r requirements.txt
+    ```
+  - Otherwise, install the common stack used in the notebooks (example):
+    ```text
+    pip install numpy pandas scikit-learn matplotlib notebook
+    pip install tensorflow
+    ```
+    > (Adjust based on imports in your notebooks.)
+If you want, you can generate a requirements.txt after confirming everything runs:
+    ```text
+    pip freeze > requirements.txt
+    ```
+
+## Notes
+- This is a **team project**. Co-authors are omitted in this public version.
+- The reported results and experiments are documented in the accompanying PDF report.
+- If you plan to share this repo in applications, keep the README focused on: **problem** → **method** → **results** → **how to run**.
+
+## License
+This repository is released under the **MIT License** (see `LICENSE`).
